@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -37,16 +39,16 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Saldi</a>
+              <a class="nav-link" href="#saldi">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcome Summer</a>
+              <a class="nav-link" href="#welcome">Welcome Summer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Last Minute</a>
+              <a class="nav-link" href="#last">Last Minute</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recensioni</a>
+              <a class="nav-link" href="#recensioni">Recensioni</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -69,28 +71,32 @@
     </nav>
 
     <section class="p-5">
-      <div class="container rounded-3">
+      <div class="container">
         <div class="row">
-          <div class="bg-light">
+          <div class="bg-dark rounded-3">
             <div class="col-12 p-4">
-              <h1 class="position-relative">
-                ViaggiIT-<span class="fs-6 position-absolute"
+              <h1 class="position-relative text-white">
+                ViaggiIT-<span class="fs-6 position-absolute text-white"
                   >Feel the Freedom</span
                 >
               </h1>
-              <hr />
-              <p class="fs-5">Scopri le destinazioni più calde del momento!</p>
-              <button
-                type="button"
-                class="btn btn-info text-light mt-3 mb-2 fw-bold"
-                style="
-                  --bs-btn-padding-y: 0.3rem;
-                  --bs-btn-padding-x: 2rem;
-                  --bs-btn-font-size: 0.8rem;
-                "
+              <hr style="color: white" />
+              <p class="fs-5 text-white">
+                Scopri le destinazioni Italiane del momento!
+              </p>
+              <a name="saldi"
+                ><button
+                  type="button"
+                  class="btn btn-info mt-3 mb-2 fw-bold"
+                  style="
+                    --bs-btn-padding-y: 0.3rem;
+                    --bs-btn-padding-x: 2rem;
+                    --bs-btn-font-size: 0.8rem;
+                  "
+                >
+                  Prenota ora
+                </button></a
               >
-                Prenota ora
-              </button>
             </div>
           </div>
         </div>
@@ -101,74 +107,99 @@
       <section class="container">
         <h3 class="fs-4">Saldi</h3>
         <div class="row">
-          <div class="col-3">
-            <div class="card border-info border-2" style="width: 18rem">
+          <div class="col-3 mb-5">
+            <div class="card border-grey border-2 hov" style="width: 18rem">
               <img
                 src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/50/78.jpg"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Salento</h5>
+
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                <a
+                  href="#"
+                  class="btn text-light fw-medium"
+                  style="background-color: #9b0430"
+                  name="welcome"
+                  >Prenota ora!</a
+                >
               </div>
             </div>
           </div>
 
           <div class="col-3">
-            <div class="card border-info border-2" style="width: 18rem">
+            <div class="card border-ligth border-2 hov" style="width: 18rem">
               <img
-                src="https://naha-resort-maldives-dhaalu-atoll.hotelmix.it/data/Photos/OriginalPhoto/13926/1392646/1392646400/Naha-Resort-Maldives-Dhaalu-Atoll-Exterior.JPEG"
-                class="card-img-top"
+                src="https://i.pinimg.com/564x/65/a8/a6/65a8a6140eb8e15f067beaa437931a2e.jpg"
+                style="height: 189px"
+                class="card-img-top object-fit-cover"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Capri</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                <a
+                  href="#"
+                  class="btn text-light fw-medium"
+                  style="background-color: #9b0430"
+                  >Prenota ora!</a
+                >
               </div>
             </div>
           </div>
 
           <div class="col-3">
-            <div class="card border-info border-2" style="width: 18rem">
+            <div class="card border-ligth border-2 hov" style="width: 18rem">
               <img
-                src="https://gimli.freetls.fastly.net/vivitravels/content/793x528/destinazioni/stati/cuba/images/tropical-beach-at-the-caribbean-island-49204522.jpg"
-                class="card-img-top"
+                src="https://i.pinimg.com/564x/1b/f5/69/1bf569d61872a0c5cf0fbf14b947373e.jpg"
+                class="card-img-top object-fit-cover"
+                style="height: 189px"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Cinque Terre</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                <a
+                  href="#"
+                  class="btn text-light fw-medium"
+                  style="background-color: #9b0430"
+                  >Prenota ora!</a
+                >
               </div>
             </div>
           </div>
 
           <div class="col-3">
-            <div class="card border-info border-2" style="width: 18rem">
+            <div class="card border-ligth border-2 hov" style="width: 18rem">
               <img
-                src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2016/05/tonnara-di-Scopello-sicilia-1080x720.jpg?v=1572448695"
-                class="card-img-top"
+                src="https://i.pinimg.com/564x/fb/1d/c6/fb1dc6b8774297fdcc1443628f7b62b4.jpg"
+                class="card-img-top object-fit-cover"
+                style="height: 189px"
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Isole Eolie</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                <a
+                  href="#"
+                  class="btn text-light fw-medium"
+                  style="background-color: #9b0430"
+                  >Prenota ora!</a
+                >
               </div>
             </div>
           </div>
@@ -186,7 +217,9 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -204,7 +237,9 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -222,7 +257,9 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -233,9 +270,246 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2016/05/tonnara-di-Scopello-sicilia-1080x720.jpg?v=1572448695"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2016/05/tonnara-di-Scopello-sicilia-1080x720.jpg?v=1572448695"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-info fw-medium">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="https://static2-viaggi.corriereobjects.it/wp-content/uploads/2016/05/tonnara-di-Scopello-sicilia-1080x720.jpg?v=1572448695"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div
+                  class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                >
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-info fw-medium" name="last"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <h3>Offerta del giorno</h3>
+
+        <div class="row">
+          <div class="col-6 mt-2">
+            <img
+              src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+              alt=""
+              class="rounded-2"
+              style="width: 100%"
+            />
+          </div>
+          <div class="col-4">
+            <h2 class="mt-3 fs-1">
+              Trentino <br />
+              Alto Adige
+            </h2>
+
+            <p class="mt-1 fs-6">21.05.2024 - 26.05.2024</p>
+            <p>
+              Chalet a partire da 100&euro;, <br />
+              non farteli sfuggire!
+            </p>
+
+            <a href="#" class="bg-black rounded-5 py-1 px-3 text-white fw-light"
+              >Best offer</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-4">
+          <a name="recensioni"></a>
+          <h3>Last Minute</h3>
+          <div class="row d-flex justify-content-evenly">
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="https://i.pinimg.com/564x/8d/6b/60/8d6b605b130ece4fbfc1753f2bc2b65d.jpg"
+                alt=""
+                width="200px"
+                class="rounded-2 shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h3 class="text-center mt-5">Dicono di noi</h3>
+        <div class="row mb-4">
+          <div class="col-1">
+            <img
+              src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg"
+              alt=""
+              width="70px"
+              class="rounded-5"
+            />
+          </div>
+          <div class="col">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              lectus mauris, egestas sit amet est sit amet, aliquet lobortis
+              lectus. Morbi vel placerat ligula. Curabitur tincidunt imperdiet
+              massa a facilisis. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus. Maecenas vel eleifend neque, sed ultricies
+              urna.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-1">
+            <img
+              src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg"
+              alt=""
+              width="70px"
+              class="rounded-5"
+            />
+          </div>
+          <div class="col">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              lectus mauris, egestas sit amet est sit amet, aliquet lobortis
+              lectus. Morbi vel placerat ligula. Curabitur tincidunt imperdiet
+              massa a facilisis. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus. Maecenas vel eleifend neque, sed ultricies
+              urna.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            <img
+              src="https://i.pinimg.com/564x/d9/d8/8e/d9d88e3d1f74e2b8ced3df051cecb81d.jpg"
+              alt=""
+              width="70px"
+              class="rounded-5"
+            />
+          </div>
+          <div class="col">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              lectus mauris, egestas sit amet est sit amet, aliquet lobortis
+              lectus. Morbi vel placerat ligula. Curabitur tincidunt imperdiet
+              massa a facilisis. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus. Maecenas vel eleifend neque, sed ultricies
+              urna.
+            </p>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="bg-dark pt-5 pb-5 text-center">
+      <div>
+        <button
+          class="bg-dark text-light border-secondary-subtle rounded-2 border-2 mt-1"
+        >
+          Contattaci
+        </button>
+      </div>
+
+      <div>
+        <p class="text-light fs-6 mt-2 mb-1">
+          &copy;2021 Kaline Travel LTD, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
